@@ -22,7 +22,7 @@ public class BrowserFactory {
     }
 
     private void setupChrome() {
-        //WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
     //запуск тестов mvn test -Dbrowser=chrome

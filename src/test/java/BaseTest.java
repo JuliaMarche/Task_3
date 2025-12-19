@@ -15,7 +15,7 @@ public class BaseTest {
         browserFactory = new BrowserFactory();
         browserFactory.initDriver(browser);
         driver = browserFactory.getDriver();
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
     }
 
     @AfterEach
