@@ -40,32 +40,32 @@ public class MainPage {
         driver.findElement(signAccountButton).click();
     }
 
-    @Step("Проверка наличие надписи 'Соберите бургер'")
+    @Step("Перекючение на раздел Булки")
     public void selectBun() {
         driver.findElement(bunTab).click();
     }
 
-    @Step("Проверка наличие надписи 'Соберите бургер'")
+    @Step("Перекючение на раздел Соусы")
     public void selectSauce() {
         driver.findElement(saucesTab).click();
     }
 
-    @Step("Проверка наличие надписи 'Соберите бургер'")
+    @Step("Перекючение на раздел Начинки")
     public void selectFilling() {
         driver.findElement(fillingTab).click();
     }
 
-    @Step("Проверка наличие надписи 'Соберите бургер'")
+    @Step("Проверка активности раздела Булки")
     public boolean isBunActive() {
         return driver.findElement(activeTab).getText().equals("Булки");
     }
 
-    @Step("Проверка наличие надписи 'Соберите бургер'")
+    @Step("Проверка активности раздела Соусы")
     public boolean isSauceActive() {
         return driver.findElement(activeTab).getText().equals("Соусы");
     }
 
-    @Step("Проверка наличие надписи 'Соберите бургер'")
+    @Step("Проверка активности раздела Начинки")
     public boolean isFillingActive() {
         return driver.findElement(activeTab).getText().equals("Начинки");
     }
